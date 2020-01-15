@@ -43,14 +43,33 @@ export default class SingleRoom extends Component {
       pets,
       images
     } = room;
+    // Destructuring images array
+    // Separate first image "mainImg" of array from the rest "...defaultImg"
+    const [mainImg, ...defaultImg] = images;
     return (
-      <StyledHero img={images[0] || this.state.defaultBcg}>
-        <Banner title={`${name} room`}>
-          <Link to="/rooms" className="btn-primary">
-            back to rooms
-          </Link>
-        </Banner>
-      </StyledHero>
+      <>
+        <StyledHero img={mainImg || this.state.defaultBcg}>
+          <Banner title={`${name} room`}>
+            <Link to="/rooms" className="btn-primary">
+              back to rooms
+            </Link>
+          </Banner>
+        </StyledHero>
+        <section className="single-room">
+          <div className="single-room-images">
+            {defaultImg.map((item, index) => {
+              return <img key={index} src={item} alt={name} />;
+            })}
+          </div>
+          <div className="single-room-info">
+            <article className="desc">
+              <h3>details</h3>
+              <p>{description}</p>
+            </article>
+            <article className="info"></article>
+          </div>
+        </section>
+      </>
     );
   }
 }
