@@ -75,9 +75,12 @@ export default class SingleRoom extends Component {
                 {capacity > 1 ? `${capacity} people` : `${capacity} person`}
               </h6>
               <h6>{pets ? 'pets allowed' : 'no pets allowed'}</h6>
+              {/* if breakfast is false, don't display "free breakfast included" */}
+              <h6>{breakfast && 'free breakfast included'}</h6>
             </article>
           </div>
         </section>
+        <section className="room-extras"></section>
       </>
     );
   }
