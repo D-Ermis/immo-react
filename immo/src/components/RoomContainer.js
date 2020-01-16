@@ -10,11 +10,10 @@ function RoomContainer({ context }) {
     return <Loading />;
   }
   return (
-    <div>
-      hello from rooms container
+    <>
       <RoomFilter room={rooms} />
       <RoomList room={sortedRooms} />
-    </div>
+    </>
   );
 }
 
