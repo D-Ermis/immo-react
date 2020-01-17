@@ -5,7 +5,7 @@ const RoomContext = React.createContext();
 
 class RoomProvider extends Component {
   state = {
-    rooms: [],
+    rooms: [], //rooms and not sortedRooms, sortedRooms is what we'll be changing
     sortedRooms: [],
     featuredRooms: [],
     loading: true,
@@ -54,14 +54,40 @@ class RoomProvider extends Component {
   };
 
   handleChange = event => {
-    const type = event.target.type;
+    const target = event.target;
+    const value = event.type === 'checkbox' ? target.checked : target.value;
     const name = event.target.name;
-    const value = event.target.value;
-    console.log(type, name, value);
+    this.setState(
+      {
+        // [name] to precise whatever the state name (capacity, type, price, etc)
+        [name]: value
+      },
+      this.filterRooms
+    );
+    // setState() is async, we only need to run filterRooms method when state changes
   };
 
   filterRooms = () => {
-    console.log('hello');
+    let {
+      rooms, // rooms and not sortedRooms, sortedRooms is what we'll be changing
+      type,
+      capacity,
+      price,
+      minSize,
+      maxSize,
+      breakfast,
+      pets
+    } = this.state;
+
+    let tempRooms = [...rooms]; // Spread operator for copying without modifying the original array
+    if (type !== 'all') {
+      // Only get rooms where type is the specified type
+      tempRooms = tempRooms.filter(room => room.type === type);
+    }
+
+    this.setState({
+      sortedRooms: tempRooms
+    });
   };
 
   render() {

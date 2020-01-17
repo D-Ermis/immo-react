@@ -19,7 +19,7 @@ function RoomContainer({ context }) {
 
 export default withRoomConsumer(RoomContainer);
 
-// Code above can also be written like below
+// Can also be written as below
 
 // import { RoomConsumer } from '../context';
 
