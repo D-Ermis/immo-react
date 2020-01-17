@@ -69,6 +69,7 @@ class RoomProvider extends Component {
 
   filterRooms = () => {
     let {
+      // let because we're gonna change the value later (parseInt capacity)
       rooms, // rooms and not sortedRooms, sortedRooms is what we'll be changing
       type,
       capacity,
@@ -79,10 +80,23 @@ class RoomProvider extends Component {
       pets
     } = this.state;
 
+    // All the rooms
     let tempRooms = [...rooms]; // Spread operator for copying without modifying the original array
+
+    // Transform value
+    // Needed as input value changes to String by default
+    capacity = parseInt(capacity);
+    price = parseInt(price);
+
+    // Filter by type
     if (type !== 'all') {
       // Only get rooms where type is the specified type
       tempRooms = tempRooms.filter(room => room.type === type);
+    }
+
+    // Filter by capacity
+    if (capacity !== 1) {
+      tempRooms = tempRooms.filter(room => room.capacity >= capacity);
     }
 
     this.setState({
