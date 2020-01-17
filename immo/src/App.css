@@ -85,6 +85,7 @@ h6 {
   margin: 2rem 0;
   padding: 1rem;
   letter-spacing: var(--mainSpacing);
+  min-height: 300px;
 }
 /* end of globals */
 /* Navbar */
