@@ -6,7 +6,7 @@ const RoomContext = React.createContext();
 
 class RoomProvider extends Component {
   state = {
-    rooms: [], //rooms and not sortedRooms, sortedRooms is what we'll be changing
+    rooms: [], //houses and not sortedRooms, sortedRooms is what we'll be changing
     sortedRooms: [],
     featuredRooms: [],
     loading: true,
