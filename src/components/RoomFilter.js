@@ -49,11 +49,11 @@ const RoomFilter = ({ room }) => {
 
   return (
     <section className="filter-container">
-      <Title title="search rooms" />
+      <Title title="search houses" />
       <form className="filter-form">
         {/* select type */}
         <div className="form-group">
-          <label htmlFor="type">room type</label>
+          <label htmlFor="type">house type</label>
           <select
             name="type"
             id="type"
