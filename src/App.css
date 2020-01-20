@@ -97,6 +97,7 @@ h6 {
   padding: 0.75rem 2rem;
   background: var(--mainWhite);
   z-index: 1;
+  border-bottom: 2px solid #5f5f5f;
 }
 .nav-header {
   display: flex;
