@@ -15,7 +15,7 @@ export default class Navbar extends Component {
         <div className="nav-center">
           <div className="nav-header">
             <Link to="/">
-              <img src={logo} alt="Immo-D" />
+              <img src="" alt="Immo-D" />
             </Link>
             <button className="nav-btn" onClick={this.handleToggle}>
               <FiMenu className="nav-icon" />
