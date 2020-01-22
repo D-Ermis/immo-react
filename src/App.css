@@ -379,8 +379,7 @@ h6 {
   padding: 5rem 0 0 0;
 }
 .single-room-images {
-  /* width: 80vw; */
-  width: 100vw;
+  width: 80vw;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -432,6 +431,14 @@ h6 {
   grid-column-gap: 2rem;
   grid-row-gap: 1rem;
 }
+
+@media screen and (max-width: 582px) {
+  .single-room-images {
+    width: 95vw;
+    max-width: 1170px;
+  }
+}
+
 @media screen and (min-width: 992px) {
   .single-room-images,
   .single-room-info,
