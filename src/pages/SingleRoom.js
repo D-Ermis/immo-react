@@ -55,13 +55,13 @@ export default class SingleRoom extends Component {
             </Link>
           </Banner> */}
         {/* </StyledHero> */}
-        {/* <section className="single-room">
+        <section className="single-room">
           <div className="single-room-images">
             {defaultImg.map((item, index) => {
               return <img key={index} src={item} alt={name} />;
             })}
           </div>
-          <div className="single-room-info">
+          {/* <div className="single-room-info">
             <article className="desc">
               <h3>details</h3>
               <p>{description}</p>
@@ -77,9 +77,9 @@ export default class SingleRoom extends Component {
               <h6>{pets ? 'pets allowed' : 'no pets allowed'}</h6>
               <h6>{breakfast && 'free breakfast included'}</h6>
             </article>
-          </div>
+          </div> */}
         </section>
-        <section className="room-extras">
+        {/* <section className="room-extras">
           <h6>extras</h6>
           <ul className="extras">
             {extras.map((item, index) => {
