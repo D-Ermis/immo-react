@@ -61,7 +61,7 @@ export default class SingleRoom extends Component {
               return <img key={index} src={item} alt={name} />;
             })}
           </div> */}
-          {/* <div className="single-room-info">
+          <div className="single-room-info">
             <article className="desc">
               <h3>details</h3>
               <p>{description}</p>
@@ -77,7 +77,7 @@ export default class SingleRoom extends Component {
               <h6>{pets ? 'pets allowed' : 'no pets allowed'}</h6>
               <h6>{breakfast && 'free breakfast included'}</h6>
             </article>
-          </div> */}
+          </div>
         </section>
         {/* <section className="room-extras">
           <h6>extras</h6>
