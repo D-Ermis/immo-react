@@ -433,9 +433,8 @@ h6 {
 }
 
 @media screen and (max-width: 582px) {
-  .single-room-images {
-    width: 95vw;
-    max-width: 1170px;
+  .single-room-images img {
+    width: 50%;
   }
 }
 
