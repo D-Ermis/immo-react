@@ -48,13 +48,13 @@ export default class SingleRoom extends Component {
     const [mainImg, ...defaultImg] = images;
     return (
       <>
-        {/* <StyledHero img={mainImg || this.state.defaultBcg}> */}
-        {/* <Banner title={`${name} room`}>
+        <StyledHero img={mainImg || this.state.defaultBcg}>
+          <Banner title={`${name} room`}>
             <Link to="/houses" className="btn-primary">
               back to houses
             </Link>
-          </Banner> */}
-        {/* </StyledHero> */}
+          </Banner>
+        </StyledHero>
         <section className="single-room">
           {/* <div className="single-room-images">
             {defaultImg.map((item, index) => {
@@ -79,14 +79,14 @@ export default class SingleRoom extends Component {
             </article>
           </div> */}
         </section>
-        <section className="room-extras">
+        {/* <section className="room-extras">
           <h6>extras</h6>
           <ul className="extras">
             {extras.map((item, index) => {
               return <li key={index}>{item}</li>;
             })}
           </ul>
-        </section>
+        </section> */}
       </>
     );
   }
