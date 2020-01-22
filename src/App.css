@@ -121,6 +121,7 @@ h6 {
 }
 .nav-links a {
   display: block;
+  line-height: 25px;
   text-decoration: none;
   padding: 1rem 0;
   color: var(--mainBlack);

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import logo from '../images/logoImmoD.png';
-import { FaAlignRight } from 'react-icons/fa';
+import { FiMenu } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 
 export default class Navbar extends Component {
@@ -18,7 +18,7 @@ export default class Navbar extends Component {
               <img src={logo} alt="Immo-D" />
             </Link>
             <button className="nav-btn" onClick={this.handleToggle}>
-              <FaAlignRight className="nav-icon" />
+              <FiMenu className="nav-icon" />
             </button>
           </div>
           <ul
