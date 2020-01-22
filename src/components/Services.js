@@ -1,29 +1,31 @@
 import React, { Component } from 'react';
 import Title from './Title';
-import { FaCocktail, FaHiking, FaBeer, FaShuttleVan } from 'react-icons/fa';
+// import { FaCocktail, FaHiking, FaBeer, FaShuttleVan } from 'react-icons/fa';
+import { FiActivity, FiHome, FiUsers, FiZoomIn } from 'react-icons/fi';
 
 export default class Services extends Component {
   state = {
     services: [
       {
-        icon: <FaCocktail />,
-        title: 'free cocktails',
-        info: 'Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem Ipsum'
+        icon: <FiActivity />,
+        title: 'Services',
+        info: 'Search services across property types and industry sectors.'
       },
       {
-        icon: <FaHiking />,
-        title: 'tree docktails',
-        info: 'Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem Ipsum'
+        icon: <FiHome />,
+        title: 'Properties',
+        info: 'Find the right investment or leasing opportunity.'
       },
       {
-        icon: <FaBeer />,
-        title: 'bree bocktails',
-        info: 'Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem Ipsum'
+        icon: <FiUsers />,
+        title: 'People',
+        info: 'Connect with the best real estate professionals in any location.'
       },
       {
-        icon: <FaShuttleVan />,
-        title: 'cree cocktails',
-        info: 'Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem Ipsum'
+        icon: <FiZoomIn />,
+        title: 'Insights',
+        info:
+          'Explore research and critical thinking on trends and opportunities in real estate.'
       }
     ]
   };

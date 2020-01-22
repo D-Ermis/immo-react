@@ -9,7 +9,10 @@ const Home = () => {
   return (
     <>
       <Hero>
-        <Banner title="luxurious houses" subtitle="prices starting from €299">
+        <Banner
+          title="Immo-D"
+          subtitle="Find real estate for sale in Luxembourg"
+        >
           <Link to="/houses" className="btn-primary">
             our houses
           </Link>
