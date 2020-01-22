@@ -56,6 +56,7 @@ export default class SingleRoom extends Component {
           </Banner> */}
         {/* </StyledHero> */}
         <section className="single-room">
+          <p>test</p>
           {/* <div className="single-room-images">
             {defaultImg.map((item, index) => {
               return <img key={index} src={item} alt={name} />;
