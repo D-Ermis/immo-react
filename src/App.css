@@ -432,11 +432,11 @@ h6 {
   grid-row-gap: 1rem;
 }
 
-@media screen and (max-width: 582px) {
+/* @media screen and (max-width: 582px) {
   .single-room-images img {
     width: 50%;
   }
-}
+} */
 
 @media screen and (min-width: 992px) {
   .single-room-images,
