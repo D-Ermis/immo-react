@@ -398,7 +398,7 @@ h6 {
 }
 .desc,
 .info {
-  /* margin: 1rem 0; */
+  margin: 1rem 0;
 }
 .desc h3 {
   text-transform: capitalize;
@@ -418,7 +418,7 @@ h6 {
 }
 .room-extras {
   width: 80vw;
-  /* margin: 0 auto 3rem auto; */
+  margin: 0 auto 3rem auto;
 }
 .room-extras h6 {
   text-transform: capitalize;
