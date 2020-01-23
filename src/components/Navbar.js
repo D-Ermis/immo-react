@@ -17,6 +17,7 @@ export default class Navbar extends Component {
             <Link to="/">
               <img src={logo} alt="Immo-D" />
             </Link>
+            <button class="waves-effect waves-light btn">button</button>
             <button className="nav-btn" onClick={this.handleToggle}>
               <FiMenu className="nav-icon" />
             </button>
