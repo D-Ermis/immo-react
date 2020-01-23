@@ -11,7 +11,7 @@ const Home = () => {
       <Hero>
         <Banner
           title="Immo-D"
-          subtitle="Find real estate for sale in Luxembourg"
+          subtitle="Find real estate for rent in Luxembourg"
         >
           <Link to="/houses" className="btn-primary">
             our houses
