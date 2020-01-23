@@ -394,7 +394,8 @@ h6 {
   width: 80vw;
   display: grid;
   grid-template-columns: 1fr;
-  margin: 2rem auto;
+  /* margin: 2rem auto; */
+  margin: 1rem auto;
 }
 .desc,
 .info {
@@ -419,6 +420,7 @@ h6 {
 .room-extras {
   width: 80vw;
   /* margin: 0 auto 3rem auto; */
+  margin: 0 auto 1rem auto;
 }
 .room-extras h6 {
   text-transform: capitalize;
