@@ -419,7 +419,6 @@ h6 {
 }
 .room-extras {
   width: 80vw;
-  /* padding: 0 2rem 0 2rem; */
   margin: 0 auto 3rem auto;
 }
 .room-extras h6 {
@@ -430,7 +429,7 @@ h6 {
   list-style-type: none;
   display: grid;
   /* grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); */
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   grid-column-gap: 2rem;
   grid-row-gap: 1rem;
 }
