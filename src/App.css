@@ -379,7 +379,7 @@ h6 {
   padding: 5rem 0 0 0;
 }
 .single-room-images {
-  width: 80vw;
+  /* width: 80vw; */
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /*350px*/
