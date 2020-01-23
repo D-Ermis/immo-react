@@ -418,7 +418,7 @@ h6 {
 }
 .room-extras {
   width: 80vw;
-  margin: 0 auto 3rem auto;
+  /* margin: 0 auto 3rem auto; */
 }
 .room-extras h6 {
   text-transform: capitalize;
