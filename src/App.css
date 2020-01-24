@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 :root {
-  --primaryColor: #af9a7d;
+  --primaryColor: #26a69a;
   --mainWhite: #fff;
   --offWhite: #f7f7f7;
   --mainBlack: #222;
@@ -304,7 +304,7 @@ h6 {
   padding: 5rem 0;
 }
 .services {
-  background: #dbd2e0;
+  background: #e6e6e6;
   text-align: center;
 }
 .services-center {

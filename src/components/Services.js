@@ -1,31 +1,30 @@
 import React, { Component } from 'react';
 import Title from './Title';
-// import { FaCocktail, FaHiking, FaBeer, FaShuttleVan } from 'react-icons/fa';
-import { FiActivity, FiHome, FiUsers, FiZoomIn } from 'react-icons/fi';
+import { FiActivity, FiFilter, FiClipboard, FiZoomIn } from 'react-icons/fi';
 
 export default class Services extends Component {
   state = {
     services: [
       {
         icon: <FiActivity />,
-        title: 'Services',
-        info: 'Search services across property types and industry sectors.'
+        title: 'Fast',
+        info: 'Single Page App for rapidly searching with no loading screen.'
       },
       {
-        icon: <FiHome />,
-        title: 'Properties',
-        info: 'Find the right investment or leasing opportunity.'
+        icon: <FiFilter />,
+        title: 'Dynamic filtering',
+        info: 'Find the right property using the dynamic filtering system.'
       },
       {
-        icon: <FiUsers />,
-        title: 'People',
-        info: 'Connect with the best real estate professionals in any location.'
+        icon: <FiClipboard />,
+        title: 'CMS',
+        info:
+          'Modify data directly using a Content Management System (Contentful).'
       },
       {
         icon: <FiZoomIn />,
-        title: 'Insights',
-        info:
-          'Explore research and critical thinking on trends and opportunities in real estate.'
+        title: 'Responsive',
+        info: 'Mobile-first design for a full responsive experience.'
       }
     ]
   };
