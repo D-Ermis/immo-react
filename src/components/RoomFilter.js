@@ -101,7 +101,7 @@ const RoomFilter = ({ room }) => {
             <input
               type="number"
               name="minSize"
-              id="size"
+              id="minSize"
               value={minSize}
               onChange={handleChange}
               className="size-input"
@@ -109,7 +109,7 @@ const RoomFilter = ({ room }) => {
             <input
               type="number"
               name="maxSize"
-              id="size"
+              id="maxSize"
               value={maxSize}
               onChange={handleChange}
               className="size-input"
