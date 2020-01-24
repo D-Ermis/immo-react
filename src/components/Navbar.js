@@ -17,7 +17,6 @@ export default class Navbar extends Component {
             <Link to="/">
               <img src={logo} alt="Immo-D" />
             </Link>
-            <button class="waves-effect waves-light btn">button</button>
             <button className="nav-btn" onClick={this.handleToggle}>
               <FiMenu className="nav-icon" />
             </button>
@@ -25,11 +24,11 @@ export default class Navbar extends Component {
           <ul
             className={this.state.isOpen ? 'nav-links show-nav' : 'nav-links'}
           >
-            <li>
+            <li className="waves-effect waves-light btn">
               <Link to="/">Home</Link>
             </li>
-            <li>
-              <Link to="/houses"> Our Houses</Link>
+            <li className="waves-effect waves-light btn">
+              <Link to="/houses">Houses</Link>
             </li>
           </ul>
         </div>
