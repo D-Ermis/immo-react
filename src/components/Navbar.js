@@ -24,11 +24,11 @@ export default class Navbar extends Component {
           <ul
             className={this.state.isOpen ? 'nav-links show-nav' : 'nav-links'}
           >
-            <li className="waves-effect waves-light btn">
-              <Link to="/">Home</Link>
+            <li>
+              <Link to="/" className="waves-effect waves-light btn">Home</Link>
             </li>
-            <li className="waves-effect waves-light btn">
-              <Link to="/houses">Houses</Link>
+            <li>
+              <Link to="/houses" className="waves-effect waves-light btn">Houses</Link>
             </li>
           </ul>
         </div>
