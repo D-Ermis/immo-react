@@ -58,6 +58,18 @@ h6 {
 
 .waves-effect.waves-light.btn.room-link {
   margin: 0;
+  background-color: #26a69a;
+  text-decoration: none;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 16px;
+  /* text-transform: uppercase; */
+  vertical-align: middle;
+  -webkit-tap-highlight-color: transparent;
 }
 
 @media screen and (min-width: 768px) {
@@ -196,7 +208,8 @@ h6 {
   letter-spacing: var(--mainSpacing);
 }
 .nav-links a:hover {
-  color: var(--primaryColor);
+  /* color: var(--primaryColor); */
+  color: var(--mainBlack);
 }
 
 .show-nav {
